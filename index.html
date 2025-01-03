@@ -1,40 +1,262 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <head>
+    <style>
+      .top-aligned {
+        display: flex;
+        flex-direction: column; /* Stack elements vertically */
+        align-items: flex-start; /* Align items to the start (left by default) */
+        justify-content: flex-start; /* Ensure content starts at the top */
+        height: 100%; /* Full height of the slide */
+        width: 100%; /* Full width of the slide */
+        margin: 0;
+        padding: 20px; /* Optional padding for spacing */
+        box-sizing: border-box; /* Include padding in total width/height */
+      }
+    </style>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
 
-		<title>reveal.js</title>
+    <title>reveal.js</title>
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+    <link rel="stylesheet" href="dist/reset.css" />
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/dracula.css" />
 
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
-		</div>
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css" />
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <!-- Slide1 -->
+        <section>
+          <h1>HTML</h1>
+          <img
+            src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/167_Html5_logo_logos-512.png"
+            alt="HTML5 Logo"
+            width="300"
+            height="320"
+          />
+        </section>
 
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
+        <!-- slide2: Table of Content -->
+        <section>
+          <table>
+            <tr>
+              <td><h3>Table of Content</h3></td>
+              <td>
+                <details>
+                  <summary>Introduction to HTML</summary>
+                  <ul style="font-size: 0.7em; padding: 10px">
+                    <li>What is HTML?</li>
+                    <li>Version of HTML</li>
+                    <li>Concept and syntax</li>
+                  </ul>
+                </details>
+                <details>
+                  <summary>Elements and its attributes</summary>
+                  <ul style="font-size: 0.7em; padding: 10px">
+                    <li>Text Content elements</li>
+                    <li>Structural elements</li>
+                    <li>Multimedia elements</li>
+                    <li>Form and Input elements</li>
+                    <li>Interactive Elements</li>
+                    <li>Table elements</li>
+                    <li>Links and Navigation elements</li>
+                    <li>Metadata and Document Settings elements</li>
+                    <li>Scripting and Programmatic elements</li>
+                  </ul>
+                </details>
+                <details>
+                  <summary>Elements and its attributes</summary>
+                  <ul style="font-size: 0.7em; padding: 10px">
+                    <li>
+                      <code>class, </code>
+                      <code>id, </code>
+                      <code>style, </code>
+                      <code>title </code>
+                    </li>
+                    <li>
+                      <code>tabindex, </code>
+                      <code>dir, </code>
+                    </li>
+                    <li>
+                      <code>contenteditable, </code>
+                      <code>draggable </code>
+                    </li>
+                    <li>
+                      <code>accesskey </code>
+                    </li>
+                    <li>
+                      <code>spellcheck, </code>
+                      <code>translate </code>
+                    </li>
+                  </ul>
+                </details>
+              </td>
+            </tr>
+          </table>
+        </section>
 
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-			});
-		</script>
-	</body>
+        <!-- Slide3: Introduction to HTML -->
+        <section>
+          <section>
+            <h3>Introduction to HTML</h3>
+            <ul style="font-size: 0.85em; padding: 10px">
+              <li>What is HTML?</li>
+              <li>Version of HTML</li>
+              <li>Concept and syntax</li>
+            </ul>
+          </section>
+          <!-- 3.1: what is HTML -->
+          <section>
+            <h4>HTML...</h4>
+            <ul style="font-size: 0.85em; padding: 10px">
+              <li>is not a programming language</li>
+              <li>
+                is a markup language used to create and <br />design a webpage
+              </li>
+            </ul>
+          </section>
+          <!-- 3.2: Version of HTML -->
+          <section>
+            <h3>Version of HTML</h3>
+          </section>
+          <!-- 3.4: HTML1 -->
+          <section>
+            <h4>HTML 1</h4>
+            <table>
+              <tr>
+                <td>
+                  <p style="font-size: 0.85em">
+                    support basic tag like headings, paragraph, hyperlink…[<code
+                      >head, title, body, p, h1-h6 and a</code
+                    >] plus limited styling
+                  </p>
+                </td>
+                <td style="width: 12em; vertical-align: middle">
+                  <img
+                    src="https://devpractical.com/public/2022/first-html-website.jpg"
+                  />
+                </td>
+              </tr>
+            </table>
+          </section>
+          <!-- 3.5. HTML2, 3 and 4 -->
+          <section>
+            <table>
+              <tr>
+                <td><h3>HTML2</h3></td>
+                <td><h3>HTML3</h3></td>
+                <td><h3>HTML4</h3></td>
+                <td><h3>HTML5</h3></td>
+              </tr>
+              <tr>
+                <td style="vertical-align: top">
+                  <ul>
+                    <li style="font-size: 0.75em">
+                      introduce new element such as
+                      <code>form, input, textarea, button</code>
+                    </li>
+                    <li style="font-size: 0.75em">
+                      and <code>align</code> attribute
+                    </li>
+                  </ul>
+                </td>
+                <td style="vertical-align: top">
+                  <ul>
+                    <li style="font-size: 0.75em">
+                      support tables, image and inline style
+                    </li>
+                    <li style="font-size: 0.75em">support JavaScript</li>
+                  </ul>
+                </td>
+                <td style="vertical-align: top">
+                  <ul>
+                    <li style="font-size: 0.75em">introduce the use of CSS</li>
+                    <li style="font-size: 0.75em">
+                      improve pages that have more than 1 language
+                    </li>
+                  </ul>
+                </td>
+                <td style="vertical-align: top">
+                  <ul>
+                    <li style="font-size: 0.75em">
+                      support media like <code>audio & video</code>
+                    </li>
+                    <li style="font-size: 0.75em">
+                      introduce new tag for better structure
+                      <code>footer, article, section</code>
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+          </section>
+          <!-- 3.6: concept and syntax of elements and tag -->
+          <section>
+            <h3>Concept and syntax</h3>
+          </section>
+          <section>
+            <h3>Concept and syntax</h3>
+            <h4>Elements and Tags</h4>
+            <table>
+              <tr>
+                <td style="vertical-align: middle">
+                  <img src="asset/syntax.png" width="1200" />
+                </td>
+                <td style="font-size: 0.75em">
+                  <ul>
+                    <li>
+                      Most element aresurrounded by opeing and closing tag
+                    </li>
+                    <li>
+                      Tag in HTML are not case-sensitive:
+                      <code
+                        >&lt;title&gt;, &lt;TITLE&gt;, &lt;Title&gt;,
+                        &lt;TitLe&gt;
+                      </code>
+                      are the same
+                    </li>
+                    <li>
+                      There are some elements that have no closing tag, for
+                      instance <code>&lt;img&gt;</code>
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+          </section>
+        </section>
+      </div>
+    </div>
+
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script>
+      // More info about initialization & config:
+      // - https://revealjs.com/initialization/
+      // - https://revealjs.com/config/
+      Reveal.initialize({
+        hash: true,
+        slideNumber: true,
+        progress: true,
+        showNotes: true,
+        center: true,
+        embedded: false,
+
+        // view: "scroll",
+        // scrollProgress: true,
+
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+      });
+    </script>
+  </body>
 </html>
