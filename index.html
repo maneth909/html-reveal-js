@@ -461,6 +461,129 @@
                 </pre>
               </div>
             </section>
+          <!-- <br> -->
+          <section>
+            <h4>Textual Content Elements</h4>
+            <p class="rounded-bigcode"><code>&lt;br></code></p>
+            <p style="font-size: 0.85em;">Inserts a line break in text</p>
+            <div style="display: inline-block; width: 100%">
+              <pre style="width: fit-content; margin: 0 auto">
+                <code class="language-html" style="font-size: 1.5em; line-height: 1.3em;">
+&lt;p>
+Hello, &lt;br/>I hope this message.... &lt;br/>
+&lt;/p>
+                </code>
+              </pre>
+            </div>
+          </section>
+          <!-- <hr> -->
+          <section>
+            <h4>Textual Content Elements</h4>
+            <p class="rounded-bigcode"><code>&lt;hr></code></p>
+            <p style="font-size: 0.85em;">draw a horizontal line, often used to separate sections</p>
+            <table style="width: 100%; border-collapse: collapse;">
+              <tr>
+                <td style="width: 50%; vertical-align: top; padding: 10px;">
+                  <div style="display: inline-block; width: 100%">
+                    <pre style="width: fit-content; margin: 0 auto">
+                      <code class="language-html" style="font-size: 1.2em; line-height: 1.3em;">
+&lt;p> above the line &lt;/p>
+&lt;hr/>
+&lt;p> below the line &lt;/p>
+                      </code>
+                    </pre>
+                  </div>
+                </td>
+                <td style="width: 50%; vertical-align: top; padding: 10px;">
+                  <p style="font-size: 0.75em;">Commonly used attributes</p>
+                  <ul style="font-size: 0.75em; line-height: 1.5em; margin: 0; padding: 0 10px;">
+                    <li><code>align</code>: set to left by default</li>
+                    <li><code>color</code></li>
+                    <li><code>size</code>: set height</li>
+                    <li><code>width</code>: set length</li>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+          </section>
+          <!-- <blockquote> -->
+          <section>
+            <h4>Textual Content Elements</h4>
+            <p class="rounded-bigcode"><code>&lt;blockquote></code></p>
+            <p style="font-size: 0.85em;">for long quotes, usually indented</p>
+            <div style="display: inline-block; width: 100%">
+              <pre style="width: fit-content; margin: 0 auto">
+                <code class="language-html" style="font-size: 1.5em; line-height: 1.3em;">
+&lt;blockquote cite="https://www.bondoul.com">
+  &lt;p>Go gain or go home&lt;/p>
+&lt;/blockquote>
+&lt;p>—Unknown, &lt;cite>Bondoul&lt;/cite>&lt;/p>
+                </code>
+              </pre>
+            </div>
+          </section>
+          <!-- <pre> -->
+            <section>
+              <h4>Textual Content Elements</h4>
+              <p class="rounded-bigcode"><code>&lt;pre></code></p>
+              <p style="font-size: 0.85em;">present the text exactly as written in HTML file</p>
+              <div style="display: inline-block; margin: 0 auto; text-align: center;">
+                <pre style="display: inline-block;margin: 0;">
+                  <code class="language-html" style="font-size: 1.5em; line-height: 1.3em;">
+    &lt;pre>
+      a b c
+        d
+      e f g
+    &lt;/pre>
+                  </code>
+                </pre>
+              </div>
+            </section>
+          <!-- <code> -->
+            <section>
+              <h4>Textual Content Elements</h4>
+              <p class="rounded-bigcode"><code>&lt;code></code></p>
+              <p style="font-size: 0.85em;">display text in a computer code look alike</p>
+              <div style="display: inline-block; margin: 0 auto; text-align: center;">
+                <pre style="display: inline-block;margin: 0;">
+                  <code class="language-html" style="font-size: 1.3em; line-height: 1.3em;">
+&lt;p> Use this funtion &lt;code>sum()&lt;/code> to sum up numbers &lt;/p>
+                  </code>
+                </pre>
+              </div>
+            </section>
+          <!-- <mark> -->
+            <section>
+              <h4>Textual Content Elements</h4>
+              <p class="rounded-bigcode"><code>&lt;mark></code></p>
+              <p style="font-size: 0.85em;">Highlights text</p>
+              <div style="display: inline-block; margin: 0 auto; text-align: center;">
+                <pre style="display: inline-block;margin: 0;">
+                  <code class="language-html" style="font-size: 1.3em; line-height: 1.3em;">
+&lt;p>There is a &lt;mark>dog&lt;/mark> behind the tree&lt;/p>
+                  </code>
+                </pre>
+              </div>
+            </section>
+          <!-- <time> -->
+            <section>
+              <h4>Textual Content Elements</h4>
+              <p class="rounded-bigcode"><code>&lt;time></code></p>
+              <div style="display: inline-block; margin: 0 auto; text-align: center;">
+                <pre style="display: inline-block;margin: 0;width: 1000px">
+                  <code class="language-html" style="font-size: 1.2em; line-height: 1.3em;">
+&lt;p>I will arrive on &lt;time datetime="2025-01-01 13:00">Jan 01&lt;/time> in London&lt;/p>
+                  </code>
+                </pre>
+              </div>
+              <p style="font-size: 0.75em;"><code>datetime</code> attribute tranlsate date and time into machine readable format. Below are valid datetime values</p>
+              <ul style="font-size: 0.75em; line-height: 1.5em; margin: 0; padding: 0 10px;">
+                <li>month and date: YYYY-MM, YYYY-MM-DD, MM-DD</li>
+                <li>week: YYYY-WWW (e.g. 2024-W12)</li>
+                <li>time: HH:MM, HH:MM:SS, HH.MM.SS.mmm</li>
+                <li>duration string: (e.g. P12DT7H12M13S)  (e.g. 12d 7h 12mn 13s)</li>
+              </ul>
+            </section>
 
 
           <!-- Structural elements -->
@@ -481,6 +604,134 @@
               <td><p class="rounded-code"><code>&lt;main></code></p></td>
             </tr>
           </section>
+          <!-- <div> -->
+            <section>
+              <h4>Structural Elements</h4>
+              <p class="rounded-bigcode"><code>&lt;div></code></p>
+              <p style="font-size: 0.85em;">a generic container used for group content together </p>
+              <div style="display: inline-block; margin: 0 auto; text-align: center;">
+                <pre style="display: inline-block;margin: 0;width: 850px">
+                  <code class="language-html" style="font-size: 1.2em; line-height: 1.3em;">
+&lt;h1>Section 1&lt;/h1>
+&lt;p>This is a paragraph inside section 1&lt;/p>
+
+&lt;div style="background-color: lightblue; padding: 10px;">
+  &lt;h1>Section 2&lt;/h1>
+  &lt;p>This is a paragraph inside section 2&lt;/p>
+&lt;/div>
+                  </code>
+                </pre>
+              </div>
+            </section>
+          <!-- <header> -->
+            <section>
+              <h4>Structural Elements</h4>
+              <p class="rounded-bigcode"><code>&lt;head></code></p>
+              <p style="font-size: 0.85em;">Represents a container for introductory content(site logo, title…) or navigation links of a webpage or section.</p>
+            </section>
+          <!-- <nav> -->
+            <section>
+              <h4>Structural Elements</h4>
+              <p class="rounded-bigcode"><code>&lt;nav></code></p>
+              <p style="font-size: 0.85em;">define a section of navigation like menu</p>
+              <div style="display: inline-block; margin: 0 auto; text-align: center;">
+                <pre style="display: inline-block;margin: 0;width: 100%">
+                  <code class="language-html" style="font-size: 1.3em; line-height: 1.3em;">
+&lt;nav>
+  &lt;ul>
+    &lt;li>&lt;a href="#home">Home&lt;/a>&lt;/li>
+    &lt;li>&lt;a href="#about">About&lt;/a>&lt;/li>
+    &lt;li>&lt;a href="#contact">Contact&lt;/a>&lt;/li>
+  &lt;/ul>
+&lt;/nav>
+                  </code>
+                </pre>
+              </div>
+            </section>
+          <!-- <section> -->
+            <section>
+              <h4>Structural Elements</h4>
+              <p class="rounded-bigcode"><code>&lt;section></code></p>
+              <p style="font-size: 0.85em;">grouping a related content into a distinct section</p>
+            </section>
+          <!-- <article> -->
+            <section>
+              <h4>Structural Elements</h4>
+              <p class="rounded-bigcode"><code>&lt;article></code></p>
+              <p style="font-size: 0.85em;">define a self-contained composition of a webpage that is usually understood without requiring context. e.g. blog post, product description, user comment.</p>
+            </section>
+          <!-- <aside> -->
+            <section>
+              <h4>Structural Elements</h4>
+              <p class="rounded-bigcode"><code>&lt;aside></code></p>
+              <p style="font-size: 0.85em;">represent a proportion of content that is indirectly related to main content such as sidebar…</p>
+            </section>
+          <!-- <footer> -->
+            <section>
+              <h4>Structural Elements</h4>
+              <p class="rounded-bigcode"><code>&lt;footer></code></p>
+              <p style="font-size: 0.85em;">define a footer of the document that usually content info like author, copyright or links to term of use</p>
+            </section>
+          <!-- <main> -->
+            <section>
+              <h4>Structural Elements</h4>
+              <p class="rounded-bigcode"><code>&lt;main></code></p>
+              <p style="font-size: 0.85em;">define the main content in the body of the document excluding header, navigation link, footer and sidebars</p>
+            </section>
+          <!-- <putting structural element together> -->
+            <section>
+              <h4>Putting all Structural Elements together</h4>
+              <div style="display: inline-block; margin: 0 auto; text-align: center;">
+                <pre style="display: inline-block;margin: 0;width: 1050px">
+                  <code class="language-html" style="font-size: 1.2em; line-height: 1.3em;">
+&lt;!DOCTYPE html>
+&lt;html lang="en">
+&lt;head>
+  &lt;meta charset="UTF-8">
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0">
+  &lt;title>Website Structure&lt;/title>
+&lt;/head>
+&lt;body>
+  &lt;header>
+    &lt;h1>Welcome to My Website&lt;/h1>
+    &lt;p>Your go-to resource for web development tips!&lt;/p>
+  &lt;/header>
+
+  &lt;nav>
+    &lt;ul>
+      &lt;li>&lt;a href="#home">Home&lt;/a>&lt;/li>
+      &lt;li>&lt;a href="#services">Services&lt;/a>&lt;/li>
+      &lt;li>&lt;a href="#contact">Contact&lt;/a>&lt;/li>
+    &lt;/ul>
+  &lt;/nav>
+
+  &lt;main>
+    &lt;section id="services">
+      &lt;h2>Our Services&lt;/h2>
+      &lt;p>We provide top-notch web development and design services.&lt;/p>
+    &lt;/section>
+
+    &lt;article>
+      &lt;h2>Latest Blog Post&lt;/h2>
+      &lt;p>Discover how HTML5 makes your websites more accessible.&lt;/p>
+    &lt;/article>
+  &lt;/main>
+
+  &lt;aside>
+    &lt;h3>Upcoming Events&lt;/h3>
+    &lt;p>Join our free webinar on modern web design trends.&lt;/p>
+  &lt;/aside>
+
+  &lt;footer>
+    &lt;p>&copy; 2024 My Website. All rights reserved.&lt;/p>
+  &lt;/footer>
+&lt;/body>
+&lt;/html>
+                  </code>
+                </pre>
+              </div>
+            </section>
+
           <!-- Multimedia Elements -->
           <section>
             <h3>Multimedia Elements</h3>
@@ -500,6 +751,187 @@
               <td><p class="rounded-code"><code>&lt;svg></code></p></td>
             </tr>
           </section>
+          <!-- <image> -->
+          <section>
+            <h4>Multimedia Elements</h4>
+            <p class="rounded-bigcode"><code>&lt;img></code></p>
+            <p style="font-size: 0.85em;">embeds images</p>
+            <table style="width: 100%; border-collapse: collapse;">
+              <tr>
+                <td style="width: 50%; vertical-align: top; padding: 10px;">
+                  <div style="width: 100%">
+                    <pre style="width: fit-content; margin: 0 auto; width:500px">
+                      <code class="language-html" style="font-size: 1.2em; line-height: 1.3em;">
+&lt;img src="example.jpg" alt="A red car" width="500" height="300">
+                      </code>
+                    </pre>
+                  </div>
+                </td>
+                <td style="width: 50%; vertical-align: top; padding-left: 40px;">
+                  <ul style="font-size: 0.75em; line-height: 1.5em; margin: 0; padding: 0 10px;">
+                    <li><code>src</code>: specify the path</li>
+                    <li><code>alt</code>: short desciption of img</li>
+                    <li><code>width, height</code></li>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+          </section>
+          <!-- <audio> -->
+            <section>
+              <h4>Multimedia Elements</h4>
+              <p class="rounded-bigcode"><code>&lt;audio></code></p>
+              <p style="font-size: 0.85em;">embeds audio content</p>
+              <table style="width: 100%; border-collapse: collapse;">
+                <tr>
+                  <td style="width: 50%; vertical-align: top; padding: 10px;">
+                    <div style="width: 100%">
+                      <pre style="width: fit-content; margin: 0 auto; width:500px">
+                        <code class="language-html" style="font-size: 1.2em; line-height: 1.3em;">
+&lt;figcaption>ROARRR&lt;/figcaption>
+&lt;audio controls src="https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3">&lt;/audio>
+                        </code>
+                      </pre>
+                    </div>
+                  </td>
+                  <td style="width: 50%; vertical-align: top; padding-left: 40px;">
+                    <ul style="font-size: 0.75em; line-height: 1.5em; margin: 0; padding: 0 10px;">
+                      <li><code>control, autoplay</code></li>
+                      <li><code>loop, muted</code></li>
+                      <li><code>src</code></li>
+                    </ul>
+                  </td>
+                </tr>
+              </table>
+            </section>
+          <!-- <video> -->
+            <section>
+              <h4>Multimedia Elements</h4>
+              <p class="rounded-bigcode"><code>&lt;video></code></p>
+              <p style="font-size: 0.85em;">embeds video content</p>
+              <table style="width: 100%; border-collapse: collapse;">
+                <tr>
+                  <td style="width: 50%; vertical-align: top; padding: 10px;">
+                    <div style="width: 100%">
+                      <pre style="width: fit-content; margin: 0 auto; width:500px">
+                        <code class="language-html" style="font-size: 1.2em; line-height: 1.3em;">
+&lt;video width="600" height="300" controls poster="poster.jpg">
+  &lt;source src="video.mp4" type="video/mp4">
+  Your browser does not support video element
+&lt;/video>
+                        </code>
+                      </pre>
+                    </div>
+                  </td>
+                  <td style="width: 50%; vertical-align: top; padding-left: 40px;">
+                    <ul style="font-size: 0.75em; line-height: 1.5em; margin: 0; padding: 0 10px;">
+                      <li><code>control, autoplay</code></li>
+                      <li><code>loop, muted</code></li>
+                      <li><code>src</code></li>
+                      <li><code>width, height</code></li>
+                    </ul>
+                  </td>
+                </tr>
+              </table>
+            </section>
+        <!-- <track> -->
+          <section>
+            <h4>Multimedia Elements</h4>
+            <p class="rounded-bigcode"><code>&lt;track></code></p>
+            <p style="font-size: 0.85em;">adds subtitles or captions to videos or audios</p>
+            <table style="width: 100%; border-collapse: collapse;">
+              <tr>
+                <td style="width: 50%; vertical-align: top; padding: 10px;">
+                  <div style="width: 100%">
+                    <pre style="width: fit-content; margin: 0 auto; width:500px">
+                      <code class="language-html" style="font-size: 1.2em; line-height: 1.3em;">
+&lt;video controls>
+  &lt;source src="movie.mp4" type="video/mp4">
+  &lt;track src="subtitles_en.vtt" kind="subtitles" label="English" default>
+  &lt;track src="subtitles_es.vtt" kind="subtitles" label="Spanish">
+  Your browser does not support the video element.
+&lt;/video>
+                      </code>
+                    </pre>
+                  </div>
+                </td>
+                <td style="width: 50%; vertical-align: top; padding-left: 40px;">
+                  <ul style="font-size: 0.75em; line-height: 1.5em; margin: 0; padding: 0 10px;">
+                    <li><code>default, src</code></li>
+                    <li><code>kind</code>: subtitles, caption...</li>
+                    <li><code>label</code></li>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+          </section>
+        <!-- <track> -->
+        <section>
+          <h4>Multimedia Elements</h4>
+          <p class="rounded-bigcode"><code>&lt;figure></code></p>
+          <p style="font-size: 0.85em;">groups images, diagrams, or illustrations, often with captions</p>
+          <table style="width: 100%; border-collapse: collapse;">
+            <tr>
+              <td style="width: 50%; vertical-align: top; padding: 10px;">
+                <div style="width: 100%">
+                  <pre style="width: fit-content; margin: 0 auto; width:1000px">
+                    <code class="language-html" style="font-size: 1.2em; line-height: 1.3em;">
+&lt;figure>
+  &lt;img src="landscape.jpg" alt="A beautiful landscape">
+  &lt;figcaption>A view of the mountains at sunset.&lt;/figcaption>
+&lt;/figure>
+                    </code>
+                  </pre>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </section>
+        <!-- <figcaption> -->
+        <section>
+          <h4>Multimedia Elements</h4>
+          <p class="rounded-bigcode"><code>&lt;figcaption></code></p>
+          <p style="font-size: 0.85em;">provides a caption for the <code>&lt;figure></code> element</p>
+        </section>
+        <!-- <canvas> -->
+          <section>
+            <h4>Multimedia Elements</h4>
+            <p class="rounded-bigcode"><code>&lt;canvas></code></p>
+            <p style="font-size: 0.85em;">a container for rendering graphic using JavaScript<code>&lt;figure></code> element</p>
+          </section>
+        <!-- <svg> -->
+        <section>
+          <h4>Multimedia Elements</h4>
+          <p class="rounded-bigcode"><code>&lt;svg></code></p>
+          <p style="font-size: 0.85em;">draw Scalable Vector Graphic in the webpage</p>
+          <table style="width: 100%; border-collapse: collapse;">
+            <tr>
+              <td style="width: 50%; vertical-align: top; padding: 10px;">
+                <div style="width: 100%; height: 180px; overflow-y: auto;">
+                  <pre style="width: fit-content; margin: 0 auto; width:1000px; height: 100%; overflow: auto;">
+                    <code class="language-html" style="font-size: 1.2em; line-height: 1.3em;">
+&lt;svg width="200" height="200" style="border:1px solid black;">
+  &lt;polygon points="100,30 150,65 150,135 100,170 50,135 50,65" 
+           fill="green" 
+           stroke="white" 
+           stroke-width="2" />
+&lt;/svg>
+                    </code>
+                  </pre>
+                </div>
+              </td>
+            </tr>
+            <td style="width: 50%; vertical-align: top; padding-left: 40px;">
+              <ul style="font-size: 0.75em; line-height: 1.5em; margin: 0; padding: 0 10px;">
+                <p style="font-size: 1em;">Commonly used shapes</p>
+                <li><code>circle, rect, line, path</code></li>
+                <li><code>polygon</code></li>
+              </ul>
+            </td>
+          </table>
+        </section>
+
+
           <!-- Form and Input Elements -->
           <section>
             <h3>Form and Input Elements</h3>
@@ -524,6 +956,116 @@
               <td><p class="rounded-code"><code>&lt;progress></code></p></td>
             </tr>
           </section>
+        <!-- <form> -->
+        <section>
+          <h4>Form and Input Elements</h4>
+          <p class="rounded-bigcode"><code>&lt;Form></code></p>
+          <p style="font-size: 0.85em;">defines a section for form</p>
+          <ul style="font-size: 0.75em; line-height: 1.5em; margin: 0; padding: 0 10px;">
+            <li><code>autocapitalize, autocomplete, nonvalidate</code></li>
+            <li><code>target</code> : <code>_self, _blank</code></li>
+            <li><code>action</code></li>
+            <li><code>method</code> : <code>post, get</code></li>
+          </ul>
+        </section>
+        <!-- <input> -->
+          <section>
+            <h4>Form and Input Elements</h4>
+            <p class="rounded-bigcode"><code>&lt;input></code></p>
+            <p style="font-size: 0.85em;">defines an input field (with various types like <code>text, email, number, password</code>...etc)</p>
+          </section>
+        <!-- <textarea> -->
+        <section>
+          <h4>Form and Input Elements</h4>
+          <p class="rounded-bigcode"><code>&lt;textarea></code></p>
+          <p style="font-size: 0.85em;">define multiple lines input</p>
+          <div style="width: 100%; height: 200px; overflow-y: auto;">
+            <pre style="width: fit-content; margin: 0 auto; width:1000px; height: 100%; overflow: auto;">
+              <code class="language-html" style="font-size: 1.2em; line-height: 1.3em;">
+&lt;label for="story">Tell me about yourself:&lt;/label>
+&lt;textarea id="story" name="story" rows="5" cols="33">
+My name is...
+&lt;/textarea>
+              </code>
+            </pre>
+          </div>
+          <p style="font-size: 0.85em;">use <code>row, col</code> attributes to set size</p>
+        </section>
+        <!-- <select> -->
+        <section>
+          <h4>Form and Input Elements</h4>
+          <p class="rounded-bigcode"><code>&lt;select></code></p>
+          <p style="font-size: 0.85em;">Dropdown list</p>
+        </section>
+        <!-- <option> -->
+          <section>
+            <h4>Form and Input Elements</h4>
+            <p class="rounded-bigcode"><code>&lt;option></code></p>
+            <p style="font-size: 0.85em;">define options inside <code>&lt;select></code></p>
+            <div style="width: 100%; height: 200px; overflow-y: auto;">
+              <pre style="width: fit-content; margin: 0 auto; width:700px; height: 100%; overflow: auto;">
+                <code class="language-html" style="font-size: 1.2em; line-height: 1.3em;">
+&lt;select name="pets">
+  &lt;option value="">Choose an option&lt;/option>
+  &lt;option value="dog">Dog&lt;/option>
+  &lt;option value="cat">Cat&lt;/option>
+                </code>
+              </pre>
+            </div>
+          </section>
+        <!-- <button> -->
+        <section>
+          <h4>Form and Input Elements</h4>
+          <p class="rounded-bigcode"><code>&lt;button></code></p>
+          <p style="font-size: 0.85em;">clickable button</p>
+          <table style="width: 100%; border-collapse: collapse;">
+            <tr>
+              <td style="width: 50%; vertical-align: top; padding: 10px;">
+                <div style="width: 100%">
+                  <pre style="width: fit-content; margin: 0 auto; width:600px">
+                    <code class="language-html" style="font-size: 1.2em; line-height: 1.3em;">
+&lt;figure>
+  &lt;img src="landscape.jpg" alt="A beautiful landscape">
+  &lt;figcaption>A view of the mountains at sunset.&lt;/figcaption>
+&lt;/figure>
+                    </code>
+                  </pre>
+                </div>
+              </td>
+              <td style="width: 50%; vertical-align: top">
+                <ul style="font-size: 0.75em; line-height: 1.5em; margin: 0; padding: 0 10px;">
+                  <li><code>submit</code></li>
+                  <li><code>reset</code></li>
+                  <li><code>button</code>: no default behaviour</li>
+                </ul>
+              </td>
+            </tr>
+          </table>
+        </section>
+        <!-- <label> -->
+          <section>
+            <h4>Form and Input Elements</h4>
+            <p class="rounded-bigcode"><code>&lt;select></code></p>
+            <p style="font-size: 0.85em;">Dropdown list</p>
+          </section>
+        <!-- <fieldset> -->
+          <section>
+            <h4>Form and Input Elements</h4>
+            <p class="rounded-bigcode"><code>&lt;option></code></p>
+            <p style="font-size: 0.85em;">define options inside <code>&lt;select></code></p>
+            <div style="width: 100%; height: 200px; overflow-y: auto;">
+              <pre style="width: fit-content; margin: 0 auto; width:700px; height: 100%; overflow: auto;">
+                <code class="language-html" style="font-size: 1.2em; line-height: 1.3em;">
+&lt;select name="pets">
+  &lt;option value="">Choose an option&lt;/option>
+  &lt;option value="dog">Dog&lt;/option>
+  &lt;option value="cat">Cat&lt;/option>
+                </code>
+              </pre>
+            </div>
+          </section>
+
+
           <!-- Interactive Elements -->
           <section>
             <h3>Form and Input Elements</h3>
@@ -557,15 +1099,15 @@
           </section>
           <!-- Links and Navigation Elements -->
           <section>
-            <h3>Form and Input Elements</h3>
+            <h3>Link and Navigation Elements</h3>
             <tr style="font-size: 0.85em;">
               <td><p class="rounded-code"><code>&lt;a></code></p></td>
               <td><p class="rounded-code"><code>&lt;nav></code></p></td>
             </tr>
           </section>
-          <!-- Table Elements -->
+          <!-- Metadata and Document Settings Elements -->
           <section>
-            <h3>Table Elements</h3>
+            <h3>Metadata and Document Settings Elements</h3>
             <tr style="font-size: 0.85em;">
               <td><p class="rounded-code"><code>&lt;!doctype html></code></p></td>
               <td><p class="rounded-code"><code>&lt;html></code></p></td>
