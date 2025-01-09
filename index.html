@@ -1051,15 +1051,80 @@ My name is...
         <!-- <fieldset> -->
           <section>
             <h4>Form and Input Elements</h4>
-            <p class="rounded-bigcode"><code>&lt;option></code></p>
-            <p style="font-size: 0.85em;">define options inside <code>&lt;select></code></p>
+            <p class="rounded-bigcode"><code>&lt;fieldset></code></p>
+            <p style="font-size: 0.85em;">groups related form elements</p>
             <div style="width: 100%; height: 200px; overflow-y: auto;">
               <pre style="width: fit-content; margin: 0 auto; width:700px; height: 100%; overflow: auto;">
                 <code class="language-html" style="font-size: 1.2em; line-height: 1.3em;">
-&lt;select name="pets">
-  &lt;option value="">Choose an option&lt;/option>
-  &lt;option value="dog">Dog&lt;/option>
-  &lt;option value="cat">Cat&lt;/option>
+&lt;form>
+  &lt;fieldset>
+    &lt;legend>Personal Information&lt;/legend>
+    &lt;label for="fname">First Name:&lt;/label>
+    &lt;input type="text" id="fname">
+    &lt;label for="lname">Last Name:&lt;/label>
+    &lt;input type="text" id="lname">
+  &lt;/fieldset>
+&lt;/form>
+                </code>
+              </pre>
+            </div>
+          </section>
+        <!-- <legend> -->
+          <section>
+            <h4>Form and Input Elements</h4>
+            <p class="rounded-bigcode"><code>&lt;legend></code></p>
+            <p style="font-size: 0.85em;">caption for fieldset</p>
+          </section>
+        <!-- <datalist> -->
+          <section>
+            <h4>Form and Input Elements</h4>
+            <p class="rounded-bigcode"><code>&lt;datalist></code></p>
+            <p style="font-size: 0.85em;">provides predefined/recommended options for an input field</p>
+            <div style="width: 100%; height: 200px; overflow-y: auto;">
+              <pre style="width: fit-content; margin: 0 auto; width:700px; height: 100%; overflow: auto;">
+                <code class="language-html" style="font-size: 1.2em; line-height: 1.3em;">
+&lt;form>
+  &lt;label for="browsers">Choose a browser:&lt;/label>
+  &lt;input list="BROWSER" id="browsers">
+  &lt;datalist id="BROWSER">
+    &lt;option value="Chrome">
+    &lt;option value="Firefox">
+    &lt;option value="Safari">
+  &lt;/datalist>
+&lt;/form>
+                </code>
+              </pre>
+            </div>
+          </section>
+        <!-- <output> -->
+          <section>
+            <h4>Form and Input Elements</h4>
+            <p class="rounded-bigcode"><code>&lt;output></code></p>
+            <p style="font-size: 0.85em;">displays the result of a calculation or actions of users</p>
+            <div style="width: 100%; height: 200px; overflow-y: auto;">
+              <pre style="width: fit-content; margin: 0 auto; width:900px; height: 100%; overflow: auto;">
+                <code class="language-html" style="font-size: 1.2em; line-height: 1.3em;">
+&lt;form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
+  &lt;input type="number" id="a" name="a">
+  +
+  &lt;input type="number" id="b" name="b">
+  =
+  &lt;output name="result" for="a b">&lt;/output>
+&lt;/form>
+                </code>
+              </pre>
+            </div>
+          </section>
+        <!-- <progress> -->
+          <section>
+            <h4>Form and Input Elements</h4>
+            <p class="rounded-bigcode"><code>&lt;progress></code></p>
+            <p style="font-size: 0.85em;">represent a progress of a task</p>
+            <div style="width: 100%; height: 200px; overflow-y: auto;">
+              <pre style="width: fit-content; margin: 0 auto; width:900px; height: 100%; overflow: auto;">
+                <code class="language-html" style="font-size: 1.2em; line-height: 1.3em;">
+&lt;label for="file">File upload progress:&lt;/label>
+&lt;progress id="file" value="70" max="100">70%&lt;/progress>
                 </code>
               </pre>
             </div>
@@ -1075,6 +1140,36 @@ My name is...
               <td><p class="rounded-code"><code>&lt;dialog></code></p></td>
             </tr>
           </section>
+        <!-- <details> -->
+          <section>
+            <h4>Interactive Elements</h4>
+            <p class="rounded-bigcode"><code>&lt;details></code></p>
+            <p style="font-size: 0.85em;">creates a collapsible area</p>
+            <div style="width: 100%; height: 200px; overflow-y: auto;">
+              <pre style="width: fit-content; margin: 0 auto; width:700px; height: 100%; overflow: auto;">
+                <code class="language-html" style="font-size: 1.2em; line-height: 1.3em;">
+&lt;details>
+  &lt;summary>More Information&lt;/summary>
+  &lt;p>This is the hidden content&lt;/p>
+&lt;/details>
+                </code>
+              </pre>
+            </div>
+          </section>
+        <!-- <summary> -->
+          <section>
+            <h4>Form and Input Elements</h4>
+            <p class="rounded-bigcode"><code>&lt;summary></code></p>
+            <p style="font-size: 0.85em;">provides a summary for the <code>&lt;details></code> element.</p>
+          </section>
+        <!-- <dialog> -->
+          <section>
+            <h4>Form and Input Elements</h4>
+            <p class="rounded-bigcode"><code>&lt;dialog></code></p>
+            <p style="font-size: 0.85em;">represents a dialog box or modal associated with JS. It is often used for alerts or pop-ups</p>
+          </section>
+
+    
           <!-- Table Elements -->
           <section>
             <h3>Table Elements</h3>
@@ -1097,6 +1192,86 @@ My name is...
               <td><p class="rounded-code"><code>&lt;colgroup></code></p></td>
             </tr>
           </section>
+          <!-- putting table element together -->
+          <section>
+            <h4>Putting all Table Elements together</h4>
+            <table style="width: 100%; border-collapse: collapse;">
+            <tr>
+              <td style="width: 50%; vertical-align: top; padding: 10px;">
+                <div style="width: 100%">
+                  <pre style="width: fit-content; margin: 0 auto; width:800px">
+                    <code class="language-html" style="font-size: 1.2em; line-height: 1.3em;">
+&lt;!DOCTYPE html>
+&lt;html lang="en-US">
+  &lt;head>
+    &lt;meta charset="utf-8" />
+    &lt;title>My test page&lt;/title>
+  &lt;/head>
+  &lt;body>
+    &lt;table border="1">
+      &lt;caption>Table&lt;/caption>
+      &lt;colgroup>
+        &lt;col span="1" style="background-color: lightgray;">&lt;/col>
+        &lt;col span="3" style="background-color: white;">&lt;/col>
+      &lt;/colgroup>
+
+      &lt;thead style="background-color: lightblue;">
+        &lt;tr>
+          &lt;th>&lt;/th>
+          &lt;th scope="col">alphabet&lt;/th>
+          &lt;th scope="col">number&lt;/th>
+          &lt;th scope="col">symbol&lt;/th>
+        &lt;/tr>
+      &lt;/thead>
+
+      &lt;tbody>
+        &lt;tr>
+          &lt;th scope="row">English&lt;/th>
+          &lt;td>a&lt;/td>
+          &lt;td>1&lt;/td>
+          &lt;td>!&lt;/td>
+        &lt;/tr>
+        &lt;tr>
+          &lt;th scope="row">Khmer&lt;/th>
+          &lt;td>ក&lt;/td>
+          &lt;td>១&lt;/td>
+          &lt;td>!&lt;/td>
+        &lt;/tr>
+      &lt;/tbody>
+
+      &lt;tfoot>
+        &lt;tr>
+          &lt;td>&lt;/td>
+          &lt;td colspan="3">Lol&lt;/td>
+        &lt;/tr>
+      &lt;/tfoot>
+    &lt;/table>
+  &lt;/body>
+&lt;/html>
+                    </code>
+                  </pre>
+                </div>
+              </td>
+              <td style="width: 50%; vertical-align: top">
+                <ul style="font-size: 0.75em; line-height: 1.5em; margin: 0; padding: 0 10px;">
+                  <li><code>&lt;table></code></li>
+                  <li><code>&lt;caption></code></li>
+                  <li><code>&lt;thead></code></li>
+                  <li><code>&lt;tbody></code></li>
+                  <li><code>&lt;tfoot></code></li>
+                  <li><code>&lt;tr></code></li>
+                  <li><code>&lt;th></code></li>
+                  <li><code>&lt;td></code></li>
+                  <li><code>&lt;col></code></li>
+                  <li><code>&lt;colgroup></code></li>
+                </ul>
+              </td>
+            </tr>
+          </table>
+          </section>
+
+
+          
           <!-- Links and Navigation Elements -->
           <section>
             <h3>Link and Navigation Elements</h3>
@@ -1105,6 +1280,40 @@ My name is...
               <td><p class="rounded-code"><code>&lt;nav></code></p></td>
             </tr>
           </section>
+        <!-- <a> -->
+          <section>
+            <h4>Links and Navigation Elements</h4>
+            <p class="rounded-bigcode"><code>&lt;a></code></p>
+            <p style="font-size: 0.85em;">Creates hyperlinks</p>
+            <table style="width: 100%; border-collapse: collapse;">
+              <tr>
+                <td style="width: 50%; vertical-align: top; padding: 10px;">
+                  <div style="width: 100%">
+                    <pre style="width: fit-content; margin: 0 auto; width:600px">
+                      <code class="language-html" style="font-size: 1.2em; line-height: 1.3em;">
+  &lt;a href="https://www.google.com" target="_blank">Visit Google&lt;/a>
+                      </code>
+                    </pre>
+                  </div>
+                </td>
+                <td style="width: 50%; vertical-align: top">
+                  <ul style="font-size: 0.75em; line-height: 1.5em; margin: 0; padding: 0 10px;">
+                    <li><code>href</code>: specify URL</li>
+                    <li><code>target</code>: define where to open-<code>_self, _blank</code></li>
+                    <li><code>download</code></li>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+          </section>
+        <!-- <nav> -->
+          <section>
+            <h4>Links and Navigation Elements</h4>
+            <p class="rounded-bigcode"><code>&lt;nav></code></p>
+            <p style="font-size: 0.85em;">defines a section for navigation links</p>
+          </section>
+
+
           <!-- Metadata and Document Settings Elements -->
           <section>
             <h3>Metadata and Document Settings Elements</h3>
@@ -1124,6 +1333,67 @@ My name is...
               <td><p class="rounded-code"><code>&lt;base></code></p></td>
             </tr>
           </section>
+          <!-- putting Metadata and Document Settings Element together -->
+          <section>
+            <h4>Putting Metadata and Document Setting Elements together</h4>
+            <table style="width: 100%; border-collapse: collapse;">
+            <tr>
+              <td style="width: 50%; vertical-align: top; padding: 10px;">
+                <div style="width: 100%">
+                  <pre style="width: fit-content; margin: 0 auto; width:630px">
+                    <code class="language-html" style="font-size: 1em; line-height: 1.3em;">
+&lt;!doctype html>
+&lt;html lang="en">
+&lt;head>
+    &lt;meta charset="UTF-8">
+
+    &lt;title>Sample HTML Document&lt;/title>
+
+    &lt;link rel="stylesheet" href="styles.css">
+    &lt;link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    &lt;style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+    &lt;/style>
+
+    &lt;script>
+        console.log("Document loaded successfully.");
+    &lt;/script>
+
+    &lt;base href="https://www.example.com/">
+&lt;/head>
+&lt;body>
+    &lt;h1>Welcome to my website&lt;/h1>
+    &lt;!-- It will resolve to https://abc.com/page.html -->
+    &lt;a href="page.html">Go to Page&lt;/a>
+&lt;/body>
+&lt;/html>
+
+                    </code>
+                  </pre>
+                </div>
+              </td>
+              <td style="width: 50%; vertical-align: top">
+                <ul style="font-size: 0.75em; line-height: 1.5em; margin: 0; padding: 0 10px;">
+                  <li><code>&lt;!doctype html></code></li>
+                  <li><code>&lt;html></code></li>
+                  <li><code>&lt;head></code></li>
+                  <li><code>&lt;meta></code></li>
+                  <li><code>&lt;title></code></li>
+                  <li><code>&lt;link></code></li>
+                  <li><code>&lt;script></code></li>
+                  <li><code>&lt;base></code></li>
+                </ul>
+              </td>
+            </tr>
+          </table>
+          </section>
+
+
           <!-- Scripting and Programmatic Elements -->
           <section>
             <h3>Scripting and Programmatic Elements</h3>
@@ -1138,9 +1408,309 @@ My name is...
               <td><p class="rounded-code"><code>&lt;iframe></code></p></td>
             </tr>
           </section>
+        <!-- <script and noscript> -->
+        <section>
+          <h4>Metadata and Document Settings Elements</h4>
+          <p class="rounded-bigcode"><code>&lt;script></code> & <code>&lt;noscript></code></p>
+          <p style="font-size: 0.85em;">groups images, diagrams, or illustrations, often with captions</p>
+          <div style="width: 100%; overflow-y: auto;">
+            <pre style="width: fit-content; margin: 0 auto; width:900px; height: 100%; overflow: auto;">
+              <code class="language-html" style="font-size: 1.2em; line-height: 1.3em;">
+&lt;body>
+&lt;h1>Welcome to My Website&lt;/h1>
+
+&lt;script>
+  document.write('&lt;p>JavaScript is enabled! Enjoy the interactive features.&lt;/p>');
+&lt;/script>
+
+&lt;noscript>
+  &lt;p>JavaScript is disabled or not supported. Some features may not work.&lt;/p>
+&lt;/noscript>
+&lt;/body>
+              </code>
+            </pre>
+          </div>
+        </section>
+        <!-- <template> -->
+          <section>
+            <h4>Metadata and Document Settings Elements</h4>
+            <p class="rounded-bigcode"><code>&lt;template></code></p>
+            <p style="font-size: 0.85em;">defines a reusable block of HTML content that is hidden until used by JavaScript</p>
+            <div style="width: 100%; overflow-y: auto;">
+              <pre style="width: fit-content; margin: 0 auto; width:900px; height: 100%; overflow: auto;">
+                <code class="language-html" style="font-size: 1.2em; line-height: 1.3em;">
+  &lt;template id="myTemplate">
+  &lt;div class="card">
+    &lt;h2>Title&lt;/h2>
+    &lt;p>Content goes here...&lt;/p>
+  &lt;/div>
+&lt;/template>
+
+&lt;script>
+  const template = document.getElementById('myTemplate').content.cloneNode(true);
+  document.body.appendChild(template);
+&lt;/script>
+                </code>
+              </pre>
+            </div>
+          </section>          
+        <!-- <embed> -->
+          <section>
+            <h4>Metadata and Document Settings Elements</h4>
+            <p class="rounded-bigcode"><code>&lt;embed></code></p>
+            <p style="font-size: 0.85em;">Embeds external content, like plugins</p>
+            <div style="width: 100%; overflow-y: auto;">
+              <pre style="width: fit-content; margin: 0 auto; width:900px; height: 100%; overflow: auto;">
+                <code class="language-html" style="font-size: 1.2em; line-height: 1.3em;">
+&lt;embed src="example.pdf" type="application/pdf" width="600" height="400">
+                </code>
+              </pre>
+            </div>
+          </section> 
+        <!-- <iframe> -->
+          <section>
+            <h4>Metadata and Document Settings Elements</h4>
+            <p class="rounded-bigcode"><code>&lt;iframe></code></p>
+            <p style="font-size: 0.85em;">embeds another HTML document within the current one</p>
+            <div style="width: 100%; overflow-y: auto;">
+              <pre style="width: fit-content; margin: 0 auto; width:900px; height: 100%; overflow: auto;">
+                <code class="language-html" style="font-size: 1.2em; line-height: 1.3em;">
+&lt;iframe src="https://example.com" width="600" height="400" sandbox="allow-scripts">
+  Your browser does not support iframes.
+&lt;/iframe>
+                </code>
+              </pre>
+            </div>
+          </section> 
+        <!-- <a> -->
+          <section>
+            <h4>Links and Navigation Elements</h4>
+            <p class="rounded-bigcode"><code>&lt;a></code></p>
+            <p style="font-size: 0.85em;">embeds another HTML document within the current one</p>
+            <table style="width: 100%; border-collapse: collapse;">
+              <tr>
+                <td style="width: 50%; vertical-align: top; padding: 10px;">
+                  <div style="width: 100%">
+                    <pre style="width: fit-content; margin: 0 auto; width:600px">
+                      <code class="language-html" style="font-size: 1.2em; line-height: 1.3em;">
+  &lt;a href="https://www.google.com" target="_blank">Visit Google&lt;/a>
+                      </code>
+                    </pre>
+                  </div>
+                </td>
+                <td style="width: 50%; vertical-align: top">
+                  <ul style="font-size: 0.75em; line-height: 1.5em; margin: 0; padding: 0 10px;">
+                    <li><code>src</code>: specify URL</li>
+                    <li><code>width, height</code></li>
+                    <li><code>allow</code></li>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+          </section>
 
         </section>
       </section>
+
+      <!-- global attribute -->
+      <section>
+        <!-- Textual content -->
+        <section>
+          <h3>Global Attributes</h3>
+          <p style="font-size: 0.85em;">embeds another HTML document within the current one</p>
+          <tr style="font-size: 0.85em;">
+            <td><p class="rounded-code"><code>class</code></p></td>
+            <td><p class="rounded-code"><code>id</code></p></td>
+            <td><p class="rounded-code"><code>&lt;style></code></p></td>
+          </tr>
+          <tr style="font-size: 0.85em;">
+            <td><p class="rounded-code"><code>title</code></p></td>
+            <td><p class="rounded-code"><code>tabindex</code></p></td>
+            <td><p class="rounded-code"><code>&lt;lang></code></p></td>
+          </tr>
+          <tr style="font-size: 0.85em;">
+            <td><p class="rounded-code"><code>dir</code></p></td>
+            <td><p class="rounded-code"><code>contenteditable</code></p></td>
+            <td><p class="rounded-code"><code>&lt;draggable></code></p></td>
+          </tr>
+          <tr style="font-size: 0.85em;">
+            <td><p class="rounded-code"><code>accesskey</code></p></td>
+            <td><p class="rounded-code"><code>spellcheck</code></p></td>
+            <td><p class="rounded-code"><code>&lt;translate></code></p></td>
+          </tr>
+        </section>
+        <!-- <class> -->
+          <section>
+            <h4>Global Attributes</h4>
+            <p class="rounded-bigcode"><code>class</code></p>
+            <div>
+              <ul style="font-size: 0.75em; line-height: 1.5em; margin: 0; padding: 0 10px;">
+                <li>group elements that share the same characteristic</li>
+                <li>so we can apply CSS and JS to all of them at once</li>
+              </ul>
+            </div>
+            <div style="width: 100%; overflow-y: auto;">
+              <pre style="width: fit-content; margin: 0 auto; width:500px; height: 100%; overflow: auto;">
+                <code class="language-html" style="font-size: 1.2em; line-height: 1.3em;">
+&lt;p class = "a"> Hello... &lt;/p>
+&lt;p class = "a"> Hi... &lt;/p>
+&lt;p class = "b"> bye... &lt;/p>
+&lt;p class = "b"> see you... &lt;/p>
+                </code>
+              </pre>
+            </div>
+          </section> 
+        <!-- <id> -->
+          <section>
+            <h4>Global Attributes</h4>
+            <p class="rounded-bigcode"><code>id</code></p>
+            <div>
+              <ul style="font-size: 0.75em; line-height: 1.5em; margin: 0; padding: 0 10px;">
+                <li>unique identifier for each elementc</li>
+                <li>different elements cannot have the same id name</li>
+              </ul>
+            </div>
+            <div style="width: 100%; overflow-y: auto;">
+              <pre style="width: fit-content; margin: 0 auto; width:500px; height: 100%; overflow: auto;">
+                <code class="language-html" style="font-size: 1.2em; line-height: 1.3em;">
+&lt;p id="x"> gotchu &lt;/p>
+&lt;p id="y"> haha &lt;/p>
+                </code>
+              </pre>
+            </div>
+          </section> 
+        <!-- <title> -->
+          <section>
+            <h4>Global Attributes</h4>
+            <p class="rounded-bigcode"><code>title</code></p>
+            <div>
+              <ul style="font-size: 0.75em; line-height: 1.5em; margin: 0; padding: 0 10px;">
+                <li>specifies extra info about the element</li>
+                <li>usually display when hover</li>
+              </ul>
+            </div>
+            <div style="width: 100%; overflow-y: auto;">
+              <pre style="width: fit-content; margin: 0 auto; width:700px; height: 100%; overflow: auto;">
+                <code class="language-html" style="font-size: 1.2em; line-height: 1.3em;">
+&lt;p title="question"> How are you doing? &lt;/p>
+                </code>
+              </pre>
+            </div>
+          </section> 
+        <!-- <style> -->
+          <section>
+            <h4>Global Attributes</h4>
+            <p class="rounded-bigcode"><code>style</code></p>
+            <p style="font-size: 0.85em;">add inline CSS styles</p>
+            <div style="width: 100%; overflow-y: auto;">
+              <pre style="width: fit-content; margin: 0 auto; width:900px; height: 100%; overflow: auto;">
+                <code class="language-html" style="font-size: 1.2em; line-height: 1.3em;">
+&lt;embed src="example.pdf" type="application/pdf" width="600" height="400">
+                </code>
+              </pre>
+            </div>
+          </section> 
+        <!-- <tabindex> -->
+          <section>
+            <h4>Global Attributes</h4>
+            <p class="rounded-bigcode"><code>tabindex</code></p>
+            <p style="font-size: 0.85em;">define element’s tab order when navigating using tab key</p>
+            <div style="width: 100%; overflow-y: auto;">
+              <pre style="width: fit-content; margin: 0 auto; width:700px; height: 100%; overflow: auto;">
+                <code class="language-html" style="font-size: 1.2em; line-height: 1.3em;">
+&lt;label>one<input type="text" />&lt;/label>
+&lt;p tabindex="0">Tabbable</p>
+&lt;p>Not tabbable:</p>
+&lt;label>tow<input type="text" />&lt;/label>
+                </code>
+              </pre>
+            </div>
+          </section>
+        <!-- <dir> -->
+          <section>
+            <h4>Global Attributes</h4>
+            <p class="rounded-bigcode"><code>dir</code></p>
+            <p style="font-size: 0.85em;">define direction of content</p>
+            <div style="width: 100%; overflow-y: auto;">
+              <pre style="width: fit-content; margin: 0 auto; width:500px; height: 100%; overflow: auto;">
+                <code class="language-html" style="font-size: 1.2em; line-height: 1.3em;">
+&lt;p dir="rtl">right to left&lt;/p>
+&lt;p dir="ltr">left to right&lt;/p>
+                </code>
+              </pre>
+            </div>
+          </section>
+        <!-- <contenteditable> -->
+          <section>
+            <h4>Global Attributes</h4>
+            <p class="rounded-bigcode"><code>contenteditable</code></p>
+            <p style="font-size: 0.85em;">indicate whether the content is editable to user</p>
+            <div style="width: 100%; overflow-y: auto;">
+              <pre style="width: fit-content; margin: 0 auto; width:700px; height: 100%; overflow: auto;">
+                <code class="language-html" style="font-size: 1.2em; line-height: 1.3em;">
+&lt;p contenteditable="true">you can edit me&lt;/p>
+&lt;p>You CANNOT edit me&lt;/p>
+                </code>
+              </pre>
+            </div>
+            <p style="font-size: 0.85em;">values: <code>true, false, plaintext-only</code></p>
+          </section>
+        <!-- <draggable> -->
+          <section>
+            <h4>Global Attributes</h4>
+            <p class="rounded-bigcode"><code>draggable</code></p>
+            <p style="font-size: 0.85em;">indicate whether the content is draggable</p>
+            <div style="width: 100%; overflow-y: auto;">
+              <pre style="width: fit-content; margin: 0 auto; width:700px; height: 100%; overflow: auto;">
+                <code class="language-html" style="font-size: 1.2em; line-height: 1.3em;">
+&lt;p draggable="true">you can drag me&lt;/p>
+&lt;p>You CANNOT drag me&lt;/p>
+                </code>
+              </pre>
+            </div>
+          </section>
+        <!-- <accesskey> -->
+          <section>
+            <h4>Global Attributes</h4>
+            <p class="rounded-bigcode"><code>accesskey</code></p>
+            <p style="font-size: 0.85em;">define a shortcut key to activate or focus on an element</p>
+            <div style="width: 100%; overflow-y: auto;">
+              <pre style="width: fit-content; margin: 0 auto; width:700px; height: 100%; overflow: auto;">
+                <code class="language-html" style="font-size: 1.2em; line-height: 1.3em;">
+&lt;button accesskey="s">Save (Alt+S)&lt;/button>
+                </code>
+              </pre>
+            </div>
+          </section>
+          <!-- <spellcheck> -->
+          <section>
+            <h4>Global Attributes</h4>
+            <p class="rounded-bigcode"><code>spellcheck</code></p>
+            <p style="font-size: 0.85em;">indicates whether the element's spelling and grammar should be checked</p>
+            <div style="width: 100%; overflow-y: auto;">
+              <pre style="width: fit-content; margin: 0 auto; width:700px; height: 100%; overflow: auto;">
+                <code class="language-html" style="font-size: 1.2em; line-height: 1.3em;">
+&lt;textarea spellcheck="true">&lt;/textarea>
+                </code>
+              </pre>
+            </div>
+          </section>
+          <!-- <translate> -->
+            <section>
+              <h4>Global Attributes</h4>
+              <p class="rounded-bigcode"><code>translate</code></p>
+              <p style="font-size: 0.85em;"> specifies whether the element's content should be translated when the page is localized</p>
+              <div style="width: 100%; overflow-y: auto;">
+                <pre style="width: fit-content; margin: 0 auto; width:500px; height: 100%; overflow: auto;">
+                  <code class="language-html" style="font-size: 1.2em; line-height: 1.3em;">
+&lt;p translate="no">Joblink&lt;/p>
+                  </code>
+                </pre>
+              </div>
+            </section>
+
+      </section>
+      
 
         <!-- Code editor -->
         <section>
